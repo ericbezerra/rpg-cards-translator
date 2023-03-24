@@ -1,8 +1,8 @@
 import json
 from googletrans import Translator
 
-source_dir = '/Users/ericbezerra/Documents/RPG DRAGON TIRANY/'
-target_dir = '/Users/ericbezerra/Documents/RPG DRAGON TIRANY/'
+source_dir = './Tests/'
+target_dir = './Tests/'
 source_file = 'spells-test.json'
 target_file = 'spells-pt-br-test.json'
 language = 'pt_br'
@@ -53,10 +53,9 @@ def translate_cards(rpg_cards, books):
         rpg_cards_ptbr.append(rpg_cards[jindex])
         
         ## INFORMATION
-        # print(rpg_cards[jindex])
-        print(rpg_cards[jindex]['title'])
-        
-        print(amount_lines)
+        print(rpg_cards[jindex])
+        # print(rpg_cards[jindex]['title'])
+        # print(amount_lines)
         ## INFORMATION
         
     return rpg_cards_ptbr
